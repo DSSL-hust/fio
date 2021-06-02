@@ -1639,7 +1639,7 @@ int add_file(struct thread_data *td, const char *fname, int numjob, int inc)
 	char file_name[PATH_MAX];
 	struct fio_file *f;
 	int len = 0;
-
+	strcpy(fname,"read.0.0");
 	dprint(FD_FILE, "add file %s\n", fname);
 
 	if (td->o.directory)

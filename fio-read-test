@@ -1,0 +1,16 @@
+[read]
+ioengine=sync
+blocksize=64K
+numjobs=1
+group_reporting
+filesize=1G
+runtime=30
+time_based
+fsync_on_close=1
+randrepeat=0
+rw=rw
+rwmixread=100
+rwmixwrite=0
+
+directory=/mnt/pmem_emul
+
